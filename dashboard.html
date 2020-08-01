@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% block body %}
+
+	<form class="form-inline" action="create" method="POST">
+		{% csrf_token %}
+		<div class="form-group">
+		     <h3 align="left" class="text-primary">  create time table</h3> 
+		        
+			<label for="day">Day</label>
+			<input type="text" name="day" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label align="left"for="first">first</label>
+			<input type="text" name="firsthour" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label for="seco">seco</label>
+			<input type="text" name="seco" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label for="third">third</label>
+			<input type="text" name="third" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label for="four">fourt</label>
+			<input type="text" name="day" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label for="fivth">fivth</label>
+			<input type="text" name="fivth" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label for="sixth">sixth</label>
+			<input type="text" name="sixthour" class="form-control"  style="width:30%;" required="required"/><br></br>
+			<label for="seven">seven</label>
+			<input type="text" name="seven" class="form-control"  style="width:30%;" required="required"/><br></br>
+		    <button type="submit" class="btn btn-sm btn-primary "><span class="glyphicon glyphicon-plus"></span>ADD</button>
+		</div>
+	</form>
+	</br>
+	
+	
+
+
+{% endblock %}
